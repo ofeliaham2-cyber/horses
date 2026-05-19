@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "siph-antigravity"
+version = "0.1.0"
+description = "HorseNoName-Predictor (SIPH): Ingesta y Base de Datos (Agente 1)"
+authors = ["Agente 1 <agente1@siph.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+# Base de Datos
+# Web Scraping Dinámico
+playwright = "^1.43.0"
+beautifulsoup4 = "^4.12.3"
+# OCR y Procesamiento de Imágenes
+pytesseract = "^0.3.10"
+Pillow = "^10.2.0"
+pdf2image = "^1.17.0"
+# Manipulación de Datos
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+# APIs y Conectividad
+requests = "^2.31.0"
+python-dotenv = "^1.0.1"
+aiohttp = "^3.9.5"
+supabase = "2.30.0"
+websockets = "13.1"
+streamlit = "^1.57.0"
+matplotlib = "^3.10.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+black = "^24.4.2"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
